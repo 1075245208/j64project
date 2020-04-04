@@ -1,0 +1,21 @@
+server:
+  port: 9000
+
+spring:
+  application:
+    name: upload-service
+  servlet:
+    multipart:
+      max-file-size: 1MB #上传是文件不能大于1M
+      max-request-size: 10MB
+
+file:
+  upload: D:\tupian
+
+
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8761/eureka

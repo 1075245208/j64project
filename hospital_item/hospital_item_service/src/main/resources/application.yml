@@ -1,0 +1,20 @@
+server:
+  port: 8000
+
+spring:
+  application:
+    name: item-service
+  datasource:
+    url: #数据连接
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: root
+    type: com.alibaba.druid.pool.DruidDataSource
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8761/eureka
+mybatis:
+  type-aliases-package: org.java.shopping.entity
+  mapper-locations: mapper/*Mapper.xml
